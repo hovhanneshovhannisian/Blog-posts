@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+.signin{
+    text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .mainTitle{
+    font-size: 40px;
+    text-align: center;
+}
+.workplace {
+    display: flex;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.leftSide{
+    width: 25%;
+    height: 100vh;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.leftSide h2{
+    font-size: 40px;
+    text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.userinfo {
+    text-align: center;
+    padding: 15px;
+    border: 2px solid;
+    margin: 10px;
+}
+.userinfo img{
+    border-radius: 50%;
+} 
+
+.posts{
+    width: 75%;
+    padding: 50px;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.postcard{
+    max-width: 700px;
+    border: 1px solid;
+    padding: 15px;
+    margin: 10px 0;
+    transition: 0.3s;
+}
+
+.postcard:hover{
+    box-shadow: 0 0 20px black;
+}
+.postcard h2{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.postcard h4{
+    font-size: 16px;
+    font-weight: normal
+}
+
+.postcard .commBox{
+    border: 1px solid;
+    border-radius: 10px;
+    padding: 3px 5px;
+    margin: 5px 0;
+}
+
+.postcard .commBox h6{
+    font-size: 16px;
+    font-weight: normal;
+    margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .leftSide{
+        display: none;
+    }
+    .posts{
+        width: 100%;
+        padding: 10px;
+    }
+    
 }
